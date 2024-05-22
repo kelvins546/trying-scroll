@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>FormaFersona</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Rubik+80s+Fade&family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Londrina+Outline&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+80s+Fade&family=Rubik+Burned&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+}
+
+.header{
+    font-family: 'Hanken Grotesk';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0.5rem 3px 15px rgb(0,0,0,0.3);
+}
+.logo a{
+    height: 60px;
+    left: 25px;  
+    position: absolute;
+    padding-top: 35px;
+    
+}
+.bold{
+    font-weight: 700;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 1110px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #fcfcfc;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 800;
+}
+
+.navbar-2 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    z-index: 9000;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-2 a {
+    color: #fff;
+    text-decoration: none;
+    padding-top: 8px;
+    font-size: small;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    height: 90px;
+    margin-left: 1100px;
+}
+
+.navbar li {
+    margin-right: 20px; 
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar li a {
+    display: inline-block;
+    padding: 16px;
+    text-decoration: none;
+    color: #00156e;
+    font-size: 1.2rem;
+    font-style: normal;
+    padding-top: 45px;
+    font-family: "Source Code Pro", monospace;
+    
+}
+
+.navbar li a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #00156e;
+    transition: 0.5s ease;
+    display: block;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.side-nav{
+    font-size: 2rem;
+    margin-right: 30px;
+    color: #00156e;
+    text-decoration: none;
+}
+.logo a{
+    display: inline;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #00156e;
+    text-decoration: none;
+    line-height: 52px;
+} 
+.underline{
+    text-decoration: underline;
+}
+  
+
+body{
+    font-family: 'Hanken Grotesk';
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #ffff;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/*section-1*/
+.sec-1{
+    background-image: url("images/home-bg.svg");
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    text-align: left;
+    color: black;
+    overflow: hidden;  
+    
+} 
+.sec-1 img{
+   overflow: hidden;
+    width: 500px;
+    left: 880px;
+    bottom: 100px;
+    position: absolute;
+
+}
+
+
+.sec-1-content{
+    max-width: 600px;
+    padding: 20px;
+    margin-top: -300px;
+    margin-right: 770px; 
+    text-align: left; 
+    display: inline-block;
+    color: #fff;
+    font-weight: 200;
+   
+}
+.sec-1-content .h1{
+    top: 145px;
+    font-size: 143px;
+    left: 79px;
+    font-weight: 300;
+    position: absolute;
+    width: 700px;
+    font-family:'Rubik Burned' ;
+}
+.sec-1-content .h2{
+    font-size:206px;
+    font-weight: 350;
+    position: absolute;
+    margin-bottom: 0px;
+    left: 74px;
+    font-family:"Rubik 80s Fade", system-ui;
+    top: 260px;
+}
+.sec-1-content p {
+    top: 480px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    width: 34%;
+    position: absolute;
+    left: 89px;
+}
+
+/*section-2*/
+.sec-2{
+    display: flex;
+    align-items: center;
+    padding: 88px 0;
+  /*  background-image: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 25%, #21234f 100%);*/
+
+}
+.sec-2{
+    background-image: url("images/sec-1-1-home.svg");
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    text-align: left;
+    
+    overflow: hidden;  
+    
+} 
+.sec-2-content{
+    flex: 1;
+    max-width: 600px;
+    padding-right: 20px;
+    color: #fff;
+    margin-right: 770px; 
+    text-align: left; 
+    display: inline-block;
+    margin-top: 80px;
+}
+.sec-2 h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.sec-2 p {
+    font-size: 18px;
+    margin-right: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.sec-2-image{
+    max-width: 50%;
+    margin-bottom: 20px;   
+}
+.sec-2-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    position: absolute;
+    top: 800px;
+    margin-top: 80px;
+    filter: drop-shadow(0px 4px 8px rgb(0, 0, 0, .5));
+}
+
+
+/*section-3*/
+.sec-3{
+    padding: 88px 0;
+    text-align: center;
+    margin-bottom: 0px;
+    overflow-x: hidden;
+    background-image: linear-gradient(339deg, rgba(47,47,47, 0.07) 0%, rgba(47,47,47, 0.07) 42%,transparent 42%, transparent 99%,rgba(17,17,17, 0.05) 99%, rgba(17,17,17, 0.05) 100%),linear-gradient(257deg, rgba(65,65,65, 0.06) 0%, rgba(65,65,65, 0.06) 11%,transparent 11%, transparent 92%,rgba(53,53,53, 0.04) 92%, rgba(53,53,53, 0.04) 100%),linear-gradient(191deg, rgba(5, 5, 5,0.02) 0%, rgba(5, 5, 5,0.02) 1%,transparent 1%, transparent 45%,rgba(19,19,19, 0.03) 45%, rgba(19,19,19, 0.03) 100%),linear-gradient(29deg, rgba(28,28,28, 0.05) 0%, rgba(28,28,28, 0.05) 33%,transparent 33%, transparent 40%,rgba(220,220,220, 0.19) 40%, rgba(220,220,220, 0.19) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+
+.sec-3 h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: black;
+}
+.sec-3-collections{
+    display: flex;
+    justify-content: center;
+}
+.sec-3-collection{
+    max-width: 300px;
+    height: auto;
+    text-align: left;
+    padding-right: 15px;
+}
+
+.sec-3-collection h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: black;
+    margin-left: 15px;
+}
+.sec-3-collection p{
+    font-size: 14px;
+    margin-bottom: 00px;
+    color: black;
+    margin-left: 15px;
+}
+.sec-3-collection img{
+    width: 260px;
+    margin-left: 15px;
+}
+.sec-3-collection .card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.4 ease-in-out;
+}
+.sec-3-collection .card:hover img{
+    filter: grayscale(1) brightness(0.4);
+}
+.sec-3-collection .card:hover::after{
+    opacity: 1;
+    inset: 20px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: black;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Hanken Grotesk';
+    padding-top: 140px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    position: absolute;
+    left: 0;
+}
+.footer-logo a{
+    
+    position: absolute;
+    left: 75px;
+    text-decoration: none;
+    color: #fff;
+    font-family:'Hanken Grotesk';
+    font-size: 32px;
+    z-index: 9999;
+    top: 2230px;
+    
+    
+}
+.footer-links,
+.footer-others,
+.footer-etc,
+.footer-etcs {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+    top: 2230px;
+    font-size: small;
+}
+
+.footer-links a,
+.footer-others a,
+.footer-etc a,
+.footer-etcs a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px ;
+}
+.footer-links{
+    position: absolute;
+    right: 445px;
+}
+.footer-others{
+    position: absolute;
+    right: 625px;
+}
+.footer-etc{
+    position: absolute;
+    right: 795px;
+}
+.footer-etcs{
+    position: absolute;
+    right: 965px;
+}
+
+
+
+/* Styles for the input field */
+.wrap-input-15 .input {
+  width: calc(20% - 50px); 
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  border: 0;
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  position: relative;
+  background: transparent;
+  height: 36px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  
+
+}
+
+
+.wrap-input-15 .subscribe-button {
+  width: 80px; 
+  height: 36px;
+  border: 1px solid #ccc;
+  background:transparent;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 15px;
+  transition: background-color 0.3s;
+  border-radius: 0; 
+}
+
+.wrap-input-15 .subscribe-button:hover {
+  background-color: #00156e;
+}
+
+.wrap-input-15 .subscribe-button:focus {
+  outline: none;
+  border-radius: 0; 
+}
+
+/* Container styles */
+.wrap-input-15 {
+  width: 80%;
+  margin: 40px 3%;
+  position: absolute; 
+  right: -900px; 
+  top: 2225px;
+  display: flex; 
+ 
+}
+
+.textk span{
+  font-size: smaller;  
+  position: absolute;
+  top: -35px;
+  color: #ccc;
+}
+
+
+
+
+.footer-separator {
+    width: 90%;
+    height: 0.2px;
+    background-color: white;
+    margin: 20px auto; 
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-icon {
+    font-size: 16px;
+    border: 1px solid #fff;
+    
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header"> 
+        <nav class="navbar">
+            <nav class="navbar-2">
+                <a href="">Shop the latest arrivals</a>
+            </nav>
+            <div class="logo">
+                <a href="" class=""><span class="bold">Forma</span><span class="underline">Fersona</span></a>
+            </div>  
+            </div>
+            <ul>
+                <li><a class="nav-link" href="#sec-1">HOME</a></li>
+                <li><a class="nav-link" href="#sec-2">ABOUT</a></li>
+                <li><a class="nav-link" href="#sec-3">COLLECTION</a></li>
+            </ul>
+        </nav> 
+    </header>
+    
+        <section id="sec-1" class="sec-1">
+            <div class="sec-1-content">
+                <img src="" alt="">
+             
+                <h1 class="h1">limited</h1>
+                <h1 class="h2">EDITION</h1>
+                <p>Discover the Latest trends, exclusive collections and fashion tips to elevate your wardrobe game.</p>
+                
+            </div>
+        </section>
+
+        <section id="sec-3" class="sec-3">
+            <h2>Collections</h2>
+            <div class="sec-3-collections">
+                    <div class="sec-3-collection" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="card">
+                            <div class="image-box">
+                                <a href="carousel-cap.html"><img src="images/sec-3-cap.svg" alt=""></a>
+                            </div>
+                                <div class="content">
+                                    
+                            </div>
+                        </div>
+                        <h3>Street cap</h3>
+                        <p>Elevate your street style with FormaFersona's collection of trendy caps.</p>
+                    </div>
+                    <div class="sec-3-collection"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="card">
+                            <div class="image-box">
+                             <a href="carousel-tee.html"><img src="images/sec-3-damit.svg" alt=""></a>
+                            </div>
+                                <div class="content">      
+                            </div>
+                        </div>
+                        <h3>Tee</h3>
+                        <p>Discover comfort and style with FormaFersona's signature tees.</p>
+                    </div>
+                    <div class="sec-3-collection"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="card">
+                            <div class="image-box">
+                                <a href=""><img src="images/sec-3-pants.svg" alt=""></a>
+                            </div>
+                                <div class="content">
+                            
+                            </div>
+                        </div>
+                        <h3>Pants</h3>
+                        <p>Upgrade your street style with FormaFersona's collection of trendy caps.</p>
+                    </div>
+                    <div class="sec-3-collection"data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="card">
+                            <div class="image-box">
+                                <a href=""><img src="images/sec-3-sapatos.svg" alt=""></a>
+                            </div>
+                                <div class="content">
+                                   
+                        </div>
+                        <h3>Shoes</h3>
+                        <p>Step into comfort and style with FormaFersona's collection of sneakers.</p>
+                    </div>          
+            </div>
+        </section>
+        <section id="sec-2" class="sec-2">
+            <div class="sec-2-content">
+                <h2 data-aos="flip-down" data-aos-duration="2000" data-aos-delay="20">About Forma<span class="underline">Fersona</span></h2>
+                <p >At FormaFersona, we believe that fashion is more than just clothing; it's a form of self-expression. Our mission is to provide you with the tools and inspiration to express your unique personality through your style.</p>
+                <p>With a carefully curated selection of the latest trends, exclusive collections, and fashion tips, FormaFersona is your ultimate destination for all things fashion. Whether you're looking for everyday essentials or statement pieces, we've got you covered.</p>
+                <a data-aos="slide-up" data-aos-duration="2000" data-aos-delay="20" href="#sec-3" class="btn">Explore our Collections</a>
+            </div>
+            <div class="sec-2-image">
+                
+            </div>
+        </section>
+        
+  
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+               
+                <a href=""><span class="bold">Forma</span><span class="underline">Fersona</span></a>
+                
+            </div>
+            <div class="all-links">
+            <nav class="footer-links">
+                <a href="#sec-1">HOME</a>
+                <a href="#sec-2">ABOUT US</a>
+                <a href="#sec-3">COLLECTION</a>
+            </nav>
+            <nav class="footer-others">
+                <a href=""onclick="showAlerts(event)">SHOWCASE</a>
+                <a href=""onclick="showAlerts(event)">CONTACT US</a>
+                <a href=""onclick="showAlerts(event)">SUPPORT</a>
+            </nav>
+            <nav class="footer-etc">
+                <a href=""onclick="showAlerts(event)">AFFILIATES</a>
+                <a href=""onclick="showAlerts(event)">SEVICES</a>
+            </nav>
+            <nav class="footer-etcs">
+                <a href=""onclick="showAlerts(event)">PRE-SALE FAQS</a>
+                <a href=""onclick="showAlerts(event)">SUBMIT A TICKET</a>
+            </nav>
+            </div>
+            <div class="wrap-input-15">
+                <div class="textk">
+                <span>Get the freshest FormaFersona news</span>
+                </div>
+                <input class="input" type="text" placeholder="Your email here"required>
+                <span class="focus-bg"></span>
+                <button class="subscribe-button"onclick="showAlerts(event)">Subscribe</button>
+            </div>
+            
+            <hr class="footer-separator">
+            <div class="footer-social">
+                <a href=""onclick="showAlerts(event)"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href=""onclick="showAlerts(event)"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href=""onclick="showAlerts(event)"><ion-icon name="logo-rss"></ion-icon></a>
+                <a href=""onclick="showAlerts(event)"><ion-icon name="logo-google"></ion-icon></a>
+            </div>
+            
+        </div>
+        <p class="footer-text">&copy; 2024 FormaFersona. All rights reserved.</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+@import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Rubik+80s+Fade&family=Rubik+Burned&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+}
+.container {
+    display: flex; 
+    
+}
+
+.side-nav {
+    width: 200px; 
+    z-index: 9999;
+    top: 40%;
+    left: 0;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.side-nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.side-nav li {
+    margin: 0; 
+}
+
+.side-nav a {
+    display: block; 
+    padding: 10px 15px; 
+    text-decoration: none; 
+    color: #333; 
+}
+
+
+
+.item-details {
+    flex: 1; 
+    padding: 20px; 
+}
+
+.side-nav li a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #00156e;
+    transition: 0.5s ease;
+    display: block;
+}
+.side-nav li a:hover::after{
+    width: 20%;
+}
+.header{
+    font-family: 'Hanken Grotesk';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0.5rem 3px 15px rgb(0,0,0,0.3);
+}
+.logo a{
+    height: 60px;
+    margin-right: 1010px;  
+   
+    padding-top: 55px;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 1110px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 800;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    list-style: none;
+    height: 90px;
+}
+li a{
+    display: inline-block;
+    padding: 16px;
+    text-decoration: none;
+    color: #00156e;
+    font-size: 1.1rem;
+    font-style: normal;
+    padding-top: 55px;
+}
+li a:after{
+      content: '';
+      width: 0px;
+      height: 3px;
+      background-color: black;
+      transition: .5s ease;
+      display: block;   
+}
+li a:hover::after{
+    width: 100%;
+}
+.side-nav{
+    font-size: 2rem;
+    margin-right: 30px;
+    color: #00156e;
+    text-decoration: none;
+}
+.logo a{
+    display: inline;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #00156e;
+    text-decoration: none;
+    line-height: 52px;
+} 
+.underline{
+    text-decoration: underline;
+}
+.tees{
+    font-weight: bold !important;
+}
+
+body{
+    font-family: 'Hanken Grotesk';
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: linear-gradient(339deg, rgba(47,47,47, 0.07) 0%, rgba(47,47,47, 0.07) 42%,transparent 42%, transparent 99%,rgba(17,17,17, 0.05) 99%, rgba(17,17,17, 0.05) 100%),linear-gradient(257deg, rgba(65,65,65, 0.06) 0%, rgba(65,65,65, 0.06) 11%,transparent 11%, transparent 92%,rgba(53,53,53, 0.04) 92%, rgba(53,53,53, 0.04) 100%),linear-gradient(191deg, rgba(5, 5, 5,0.02) 0%, rgba(5, 5, 5,0.02) 1%,transparent 1%, transparent 45%,rgba(19,19,19, 0.03) 45%, rgba(19,19,19, 0.03) 100%),linear-gradient(29deg, rgba(28,28,28, 0.05) 0%, rgba(28,28,28, 0.05) 33%,transparent 33%, transparent 40%,rgba(220,220,220, 0.19) 40%, rgba(220,220,220, 0.19) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+.logo a{
+    height: 60px;
+    left: 25px;  
+    position: absolute;
+    padding-top: 1px;
+    
+}
+.bold{
+    font-weight: 700;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 1110px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #fcfcfc;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 800;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    height: 60px;
+    margin-left: 1100px;
+}
+
+.navbar li {
+    margin-right: 20px; 
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar li a {
+    display: inline-block;
+    padding: 16px;
+    text-decoration: none;
+    color: #00156e;
+    font-size: 1.2rem;
+    font-style: normal;
+    padding-top: 45px;
+    font-family: "Source Code Pro", monospace;
+    
+}
+
+.navbar li a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #00156e;
+    transition: 0.5s ease;
+    display: block;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.side-nav{
+    font-size: 2rem;
+    margin-right: 30px;
+    color: #00156e;
+    text-decoration: none;
+}
+.logo a{
+    display: inline;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #00156e;
+    text-decoration: none;
+    line-height: 52px;
+} 
+.underline{
+    text-decoration: underline;
+}
+.sec-4{
+    position: relative;
+}
+.sec-4-content .cards{
+    background-color: #fff;
+    padding: 80px 20px; 
+    border-radius: 0px;
+    position: absolute;
+    height: 510px; 
+    width: 510px; 
+    z-index: -999;
+    top: 120px;
+    right: 780px;
+}
+
+
+
+.sec-4-content .cards img {
+    width: 800px;
+    position: absolute;
+    left: -139px;
+    top: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+
+.sec-4-content p {
+    margin-left: 720px;
+}
+.sec-4 h1{
+    position: absolute;
+    font-size: 53px;
+    margin-left: 756px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    top: 125px;
+   
+    
+}
+.sec-4-content .a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 26px;
+    top: 190px;
+    position: absolute;
+    
+}
+.sec-4-content .all{
+    font-family:'Hanken Grotesk';
+    font-size: 18px;
+    position: absolute;
+    top: 250px;   
+    margin-bottom: 30px;
+}
+
+.sec-4-content .selec{
+    margin-top: 80px;
+    margin-bottom: 5px;
+    font-size: larger;
+    position: absolute;
+    bottom: 400px;
+}
+.sec-4-content p {
+    margin-bottom: 5px;
+    max-width: fit-content;
+}
+
+.sec-4-content p .del {
+    color: green; 
+}
+
+.sec-4-content p span {
+    color: red; 
+}
+.size-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    width: 500px; 
+    margin-left: 720px;
+    font-size: 20px;
+    padding-top: 102px;
+    
+}
+
+.size-selector input[type="radio"] {
+    display: none;
+}
+
+.size-selector label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px; 
+    padding: 10px;
+    border: 3px solid #00156e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.size-selector input[type="radio"]:checked + label {
+    background-color: #00156e;
+    border-color: #00156e;
+    color: #fff;
+}
+
+.size-selector label:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    width: 500px; 
+    margin-left: 720px;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 120px;
+}
+
+.button-container button  {
+    grid-column: span 3;
+    height: 50px; 
+    padding: 10px;
+    border: 3px solid #00156e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #00156e;
+    color: #fff;
+    text-decoration: none;
+}
+.button-container a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-container button:hover {
+    background-color: #000c4d;
+    border-color: #000c4d;
+    
+}
