@@ -8,26 +8,41 @@
     <title>FormaFersona</title>
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="logo">
             <a class="home" href="index.html" ><span class="bold">Forma</span><span class="underline">Fersona</span></a>
+            <ul>
+                <li><a class="nav-liponk" href="index.html#sec-1">HOME</a></li>
+                <li><a class="nav-link" href="index.html#sec-2">ABOUT</a></li>
+                <li><a class="nav-link" href="index.html#sec-3">COLLECTION</a></li>
+            </ul>
+        </nav>
+    </header>   
             <div class="container">
                 <div class="side-nav">
                     <ul>
                         <li><a href="carousel-cap.html" class="caps">Caps</a></li>
                         <li><a href="carousel-tee.html" class="tees">Tees</a></li>
-                        <li><a href="carousel-pants.html" class="pants">Pants</a></li>
-                        <li><a href="carousel-pants.html" class="shoes">Shoes</a></li>
+                        <li><a href="" onclick="showAlerts(event)" class="pants">Pants</a></li>
+                        <li><a href="" onclick="showAlerts(event)" class="shoes">Shoes</a></li>
                     </ul>
                 </div>
                 <div class="item-details">
                     <h1 data-aos="flip-left" data-aos-duration="2000" data-aos-delay="600">L.A Blue headgear</h1>
+                    <div class="content-details">
+                        <ul>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Fabric: </span> Fur/Wool</li>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Fit: </span> Full</li>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Size: </span>Free Size</li>
+                        </ul> 
+                    </div>
                     <p class="pclass" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">The L.A. Blue Headgear features an adjustable strap at the back for a customizable fit, ensuring comfort for all head sizes.</p>
                     <h4 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="del">$50</span> <del> $99</del> <span>50% off</span></h4>
                     <div class="left-details">
                         <h3 data-aos="flip-right" data-aos-duration="2000" data-aos-delay="600">Details</h3>
                         <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600">The L.A. Blue Headgear is a stylish and contemporary addition to any wardrobe, merging comfort with urban flair. Crafted from high-quality, durable materials, this cap is designed for a comfortable fit that suits all-day wear. The deep blue color is both striking and versatile, evoking the cool and laid-back vibe of Los Angeles. The embroidered logo on the front adds a touch of sophistication and street-style edge.</p>
                     <button id="preOrderBtn" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">Pre-order</button>
+                    
                     <div class="pic" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
                         <img src="images/cap/cap (1).svg" alt="">
                     </div>
@@ -60,8 +75,7 @@
             
         </div>
 
-    </header>
-    <script src="pre-order.js"></script>
+    <script src="prcd-tee-1.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

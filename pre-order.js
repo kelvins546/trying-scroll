@@ -53,12 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-//not avail
-document.getElementById("preOrderBtn").addEventListener("click", function() {
-    alert("Item is not yet available");
-});
 
-//transition when click icon 
+function showAlerts(event) {
+    event.preventDefault(); // Prevents the default action (navigation)
+    alert("Coming soon.");
+}
 document.addEventListener('DOMContentLoaded', function () {
     const nextPageLink = document.getElementById('next-page');
     const prevPageLink = document.getElementById('prev-page');
@@ -66,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function () {
     nextPageLink.addEventListener('click', function (event) {
         event.preventDefault();
         
-        // Add the slide-out-left class to the body
-        document.body.classList.add('slide-out-left');
+        // Add the slide-out-left class to the container
+        document.querySelector('.container').classList.add('slide-out-left');
         
         // After the transition duration, navigate to the next page
         setTimeout(() => {
@@ -78,8 +77,8 @@ document.addEventListener('DOMContentLoaded', function () {
     prevPageLink.addEventListener('click', function (event) {
         event.preventDefault();
         
-        // Add the slide-out-right class to the body
-        document.body.classList.add('slide-out-right');
+        // Add the slide-out-right class to the container
+        document.querySelector('.container').classList.add('slide-out-right');
         
         // After the transition duration, navigate to the previous page
         setTimeout(() => {
@@ -87,4 +86,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 500); // Duration should match the CSS transition duration
     });
 });
-

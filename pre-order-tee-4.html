@@ -8,27 +8,41 @@
     <title>FormaFersona</title>
 </head>
 <body>
-    <header>
-        
+    <nav class="navbar">
         <div class="logo">
             <a class="home" href="index.html" ><span class="bold">Forma</span><span class="underline">Fersona</span></a>
+            <ul>
+                <li><a class="nav-liponk" href="index.html#sec-1">HOME</a></li>
+                <li><a class="nav-link" href="index.html#sec-2">ABOUT</a></li>
+                <li><a class="nav-link" href="index.html#sec-3">COLLECTION</a></li>
+            </ul>
+        </nav>
+    </header>
             <div class="container">
                 <div class="side-nav">
                     <ul>
                         <li><a href="carousel-cap.html" class="caps">Caps</a></li>
                         <li><a href="carousel-tee.html" class="tees">Tees</a></li>
-                        <li><a href="carousel-pants.html" class="pants">Pants</a></li>
-                        <li><a href="carousel-pants.html" class="shoes">Shoes</a></li>
+                        <li><a href="" onclick="showAlerts(event)" class="pants">Pants</a></li>
+                        <li><a href="" onclick="showAlerts(event)" lass="shoes">Shoes</a></li>
                     </ul>
                 </div>
                 <div class="item-details">
                     <h1 data-aos="flip-left" data-aos-duration="2000" data-aos-delay="600">Faded fly tee</h1>
+                    <div class="content-details">
+                        <ul>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Fabric: </span> Cotton</li>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Fit: </span> Oversized</li>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Size: </span>XS to XXL</li>
+                        </ul> 
+                    </div>  
                     <p class="pclass" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">The Faded Fly Tee features a classic crew neck and short sleeves, offering a timeless and comfortable silhouette perfect for any casual occasion.</p>
                     <h4 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="del">$199</span> <del> $259</del> <span>25% off</span></h4>
                     <div class="left-details">
                         <h3 data-aos="flip-right" data-aos-duration="2000" data-aos-delay="600">Details</h3>
                         <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600">The Faded Fly Tee is a trendy and comfortable addition to any wardrobe, blending a relaxed fit with a unique design. Crafted from high-quality, breathable fabric, this tee ensures all-day comfort and durability. The soft, faded gray color gives it a vintage, worn-in look, while the intricate fly graphic adds a touch of edgy sophistication.</p>
-                    <button id="preOrderBtn" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">Pre-order</button>
+                   <a href="prcd-tee-4.html">  <button data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">Pre-order</button>
+                   </a>
                     <div class="pic" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
                         <img src="images/size-damit-4.svg" alt="">
                     </div>
@@ -61,7 +75,7 @@
             
         </div>
 
-    </header>
+    
     <script src="pre-order.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

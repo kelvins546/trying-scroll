@@ -118,12 +118,7 @@ li a:after{
 li a:hover::after{
     width: 100%;
 }
-.side-nav{
-    font-size: 2rem;
-    margin-right: 30px;
-    color: #00156e;
-    text-decoration: none;
-}
+
 .logo a{
     display: inline;
     font-size: 1.7rem;
@@ -132,6 +127,12 @@ li a:hover::after{
     text-decoration: none;
     line-height: 52px;
 } 
+.side-nav{
+    font-size: 2rem;
+    margin-right: 30px;
+    color: #00156e;
+    text-decoration: none;
+}
 .underline{
     text-decoration: underline;
 }
@@ -226,12 +227,7 @@ section{
     width: 100%;
 }
 
-.side-nav{
-    font-size: 2rem;
-    margin-right: 30px;
-    color: #00156e;
-    text-decoration: none;
-}
+
 .logo a{
     display: inline;
     font-size: 1.7rem;
@@ -240,6 +236,12 @@ section{
     text-decoration: none;
     line-height: 52px;
 } 
+.side-nav{
+    font-size: 2rem;
+    margin-right: 30px;
+    color: #00156e;
+    text-decoration: none;
+}
 .underline{
     text-decoration: underline;
 }
@@ -275,7 +277,7 @@ section{
 .sec-4 h1{
     position: absolute;
     font-size: 53px;
-    margin-left: 756px;
+    margin-left: 576px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     top: 125px;

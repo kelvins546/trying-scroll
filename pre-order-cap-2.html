@@ -9,19 +9,34 @@
 </head>
 <body>
     <header>
+        <nav class="navbar">
         <div class="logo">
             <a class="home" href="index.html" ><span class="bold">Forma</span><span class="underline">Fersona</span></a>
+            <ul>
+                <li><a class="nav-liponk" href="index.html#sec-1">HOME</a></li>
+                <li><a class="nav-link" href="index.html#sec-2">ABOUT</a></li>
+                <li><a class="nav-link" href="index.html#sec-3">COLLECTION</a></li>
+            </ul>
+        </nav>
+    </header>
             <div class="container">
                 <div class="side-nav">
                     <ul>
                         <li><a href="carousel-cap.html" class="caps">Caps</a></li>
                         <li><a href="carousel-tee.html" class="tees">Tees</a></li>
-                        <li><a href="carousel-pants.html" class="pants">Pants</a></li>
-                        <li><a href="carousel-pants.html" class="shoes">Shoes</a></li>
+                        <li><a href="" onclick="showAlerts(event)"  class="pants">Pants</a></li>
+                        <li><a href="" onclick="showAlerts(event)" class="shoes">Shoes</a></li>
                     </ul>
                 </div>
                 <div class="item-details">
                     <h1 data-aos="flip-left" data-aos-duration="2000" data-aos-delay="600">Blue wave beanie</h1>
+                    <div class="content-details">
+                        <ul>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Fabric: </span> Wool </li>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Fit: </span> High </li>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Size: </span>Free Size</li>
+                        </ul> 
+                    </div>
                     <p class="pclass" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">The Blue Wave Beanie features a classic ribbed cuff for a secure and comfortable fit, ensuring it stays in place all day.</p>
                     <h4 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="del">$50</span> <del> $75</del> <span>25% off</span></h4>
                     <div class="left-details">
@@ -60,8 +75,8 @@
             
         </div>
 
-    </header>
-    <script src="pre-order.js"></script>
+   
+    <script src="prcd-tee-1.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

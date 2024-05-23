@@ -4,16 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Rubik+Burned&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Rubik+80s+Fade&family=Rubik+Burned&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Hanken Grotesk';
-}
-.container {
-    display: flex; 
-    
-}
+
 
 .side-nav {
     width: 200px; 
@@ -68,6 +59,16 @@
     height: 60px;
     box-shadow: 0.5rem 3px 15px rgb(0,0,0,0.3);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+}
+.container {
+    display: flex; 
+    
+}
 .logo a{
     height: 60px;
     margin-right: 1010px;  
@@ -118,12 +119,7 @@ li a:after{
 li a:hover::after{
     width: 100%;
 }
-.side-nav{
-    font-size: 2rem;
-    margin-right: 30px;
-    color: #00156e;
-    text-decoration: none;
-}
+
 .logo a{
     display: inline;
     font-size: 1.7rem;
@@ -132,6 +128,12 @@ li a:hover::after{
     text-decoration: none;
     line-height: 52px;
 } 
+.side-nav{
+    font-size: 2rem;
+    margin-right: 30px;
+    color: #00156e;
+    text-decoration: none;
+}
 .underline{
     text-decoration: underline;
 }
@@ -275,7 +277,7 @@ section{
 .sec-4 h1{
     position: absolute;
     font-size: 53px;
-    margin-left: 756px;
+    margin-left: 550px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     top: 125px;

@@ -9,25 +9,43 @@
 </head>
 <body>
     <header>
+        <nav class="navbar">
         <div class="logo">
             <a class="home" href="index.html" ><span class="bold">Forma</span><span class="underline">Fersona</span></a>
+            <ul>
+                <li><a class="nav-liponk" href="index.html#sec-1">HOME</a></li>
+                <li><a class="nav-link" href="index.html#sec-2">ABOUT</a></li>
+                <li><a class="nav-link" href="index.html#sec-3">COLLECTION</a></li>
+            </ul>
+        </nav>
+        
+    </header>
             <div class="container">
                 <div class="side-nav">
                     <ul>
                         <li><a href="carousel-cap.html" class="caps">Caps</a></li>
                         <li><a href="carousel-tee.html" class="tees">Tees</a></li>
-                        <li><a href="carousel-pants.html" class="pants">Pants</a></li>
-                        <li><a href="carousel-pants.html" class="shoes">Shoes</a></li>
+                        <li><a href="" onclick="showAlerts(event)" class="pants">Pants</a></li>
+                        <li><a href="" onclick="showAlerts(event)" class="shoes">Shoes</a></li>
                     </ul>
                 </div>
+                    
                 <div class="item-details">
                     <h1 data-aos="flip-left" data-aos-duration="2000" data-aos-delay="600">L.S Furry beanie</h1>
+                    <div class="content-details">
+                        <ul>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Fabric: </span> Fur</li>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Fit: </span> Full</li>
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="content-b">Size: </span>Free Size</li>
+                        </ul> 
+                    </div>
                     <p class="pclass" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">The L.S. Furry Beanie features a classic ribbed cuff for a secure and comfortable fit, ensuring it stays in place throughout the day.</p>
                     <h4 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600"><span class="del">$50</span> <del> $129</del> <span>89% off</span></h4>
                     <div class="left-details">
                         <h3 data-aos="flip-right" data-aos-duration="2000" data-aos-delay="600">Details</h3>
                         <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="600"> The L.S. Furry Beanie is a luxurious and cozy addition to any wardrobe, combining warmth with a touch of plush style. Crafted from high-quality, faux fur fabric, this beanie ensures a snug and comfortable fit, perfect for the coldest weather. The rich, textured fabric adds a sense of elegance and sophistication, while the soft, furry exterior offers a unique and stylish appeal.</p>
                     <button id="preOrderBtn" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="600">Pre-order</button>
+                    
                     <div class="pic" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
                         <img src="images/cap/cap (5).svg" alt="">
                     </div>
@@ -60,8 +78,7 @@
             
         </div>
 
-    </header>
-    <script src="pre-order.js"></script>
+    <script src="prcd-tee-1.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
